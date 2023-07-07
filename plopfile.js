@@ -1,3 +1,4 @@
+import basicGenerator from "./template/generator/basic.js";
 export default function (plop) {
   // Add your generators here
   plop.setGenerator("example", {
@@ -86,4 +87,7 @@ export default function (plop) {
       ];
     },
   });
+
+  // 生成基础vue文件
+  plop.setGenerator("basic", basicGenerator);
 }
