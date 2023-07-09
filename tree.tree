@@ -1,0 +1,34 @@
+├── .eslintrc.cjs
+├── .gitignore
+├── index.html
+├── package.json
+├── plopfile.cjs
+├── pnpm-lock.yaml
+├── public
+│  └── vite.svg
+├── REDEMI.md
+├── src
+│  ├── App.css
+│  ├── App.tsx
+│  ├── assets
+│  │  └── react.svg
+│  ├── index.css
+│  ├── main.tsx
+│  ├── pages
+│  │  ├── SuTable
+│  │  │  ├── components
+│  │  │  └── index.tsx
+│  │  └── useForm.tsx
+│  └── vite-env.d.ts
+├── template
+│  ├── Basic.hbs
+│  ├── basicVue.hbs
+│  ├── generator
+│  │  └── basic.js
+│  ├── layout
+│  │  └── index.hbs
+│  └── utils
+│    └── verifyFileExist.js
+├── tsconfig.json
+├── tsconfig.node.json
+└── vite.config.ts
