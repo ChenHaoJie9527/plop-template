@@ -1,5 +1,6 @@
 // import basicGenerator from "./template/generator/basic.js";
 const basicGenerator = require("./template/generator/basic");
+const pageRouter = require("./template/generator/pageRouter.js");
 
 module.exports = function (plop) {
   // Add your generators here
@@ -32,4 +33,6 @@ module.exports = function (plop) {
   });
   // // 生成组件目录文件
   plop.setGenerator("basic", basicGenerator);
+
+  plop.setGenerator("配置路由组件", pageRouter);
 };
