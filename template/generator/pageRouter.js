@@ -1,7 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const verifyFileExist = require("../utils/verifyFileExist");
-
+const bigHumpCheck = require("../utils/bigHumpCheck");
 const baseFile = path.resolve(__dirname, "../../src/pages");
 module.exports = {
   description: "Generate a new route component",
@@ -16,6 +16,9 @@ module.exports = {
         }
         if (verifyFileExist(dirName, baseFile)) {
           return "路由组件已存在";
+        }
+        if (!bigHumpCheck(dirName)) {
+          return "请使用大驼峰命名规范";
         }
         return true;
       },
