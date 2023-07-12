@@ -5,6 +5,11 @@ module.exports = {
       type: "input",
       name: "componentName",
       message: "输入路由组件的名称[eg: 大驼峰命名]",
+      validate: (dirName) => {
+        if (!dirName || dirName.trim === "") {
+          return "路由组件名不能为空";
+        }
+      },
     },
   ],
   actions: [
