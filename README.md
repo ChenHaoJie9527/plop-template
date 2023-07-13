@@ -113,8 +113,8 @@
   - [x] 校验路由组件是否存在
   - [x] 校验路由组件名是否为大驼峰
 - [ ] 实现可定制化 **Atnd** **Form**表单组件
-  - [ ] 创建Form 生成器
-  - [ ] 创建Form 模板
+  - [x] 创建Form 生成器
+  - [x] 创建Form 模板
   - [ ] 可定制化的Form.Item
     - [ ] 自定义Label Text
     - [ ] 自定义 Label value 组件

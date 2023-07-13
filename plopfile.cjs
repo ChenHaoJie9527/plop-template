@@ -1,6 +1,7 @@
 // import basicGenerator from "./template/generator/basic.js";
 const basicGenerator = require("./template/generator/basic");
 const pageRouter = require("./template/generator/pageRouter.js");
+const antdForm = require("./template/generator/antdForm");
 
 module.exports = function (plop) {
   // Add your generators here
@@ -35,4 +36,19 @@ module.exports = function (plop) {
   plop.setGenerator("basic", basicGenerator);
 
   plop.setGenerator("配置路由组件", pageRouter);
+
+  plop.setGenerator("自定义Atnd Form组件", antdForm);
+
+  plop.setHelper("capitalize", function (text) {
+    return text.charAt(0).toUpperCase() + text.slice(1);
+  });
+
+  plop.addHelper("directory", (comp) => {
+    try {
+      fs.accessSync(`src/components/${comp}`, fs.F_OK);
+      return `components/${comp}`;
+    } catch (e) {
+      return `components`;
+    }
+  });
 };
