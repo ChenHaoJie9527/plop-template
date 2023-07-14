@@ -4,9 +4,13 @@ import { Form, Input } from 'antd';
  const {{pascalCase componentName}} = () => {
   return (
     <Form>
-      <Form.Item label="{{label}}">
-        <Input />
-      </Form.Item>
+      {Array({{numberOfItems}}).map((item, index) => {
+        return (
+          <Form.Item key={index} label="{{label}}">
+            <Input />
+          </Form.Item>
+        );
+      })}
     </Form>
   );
 };

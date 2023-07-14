@@ -116,5 +116,5 @@
   - [x] 创建Form 生成器
   - [x] 创建Form 模板
   - [ ] 可定制化的Form.Item
-    - [ ] 自定义Label Text
+    - [x] 自定义Label Text
     - [ ] 自定义 Label value 组件
